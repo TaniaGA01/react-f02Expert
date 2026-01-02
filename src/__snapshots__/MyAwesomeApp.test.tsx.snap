@@ -1,0 +1,31 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MyAwesomeApp > should match snapshot 1`] = `
+<div>
+  <h2
+    data-testid="first-name-title"
+  >
+    Tania
+  </h2>
+  <h3>
+    Gaitan
+  </h3>
+  <p>
+    lola, jtj, ss
+  </p>
+  <p>
+    4
+  </p>
+  <h1>
+    Hola
+  </h1>
+  <p>
+    {"zipCode":"123","city":"NY","country":"USA"}
+  </p>
+  <h3
+    style="background-color: red; padding: 10px; border-radius: 10px;"
+  >
+    123
+  </h3>
+</div>
+`;

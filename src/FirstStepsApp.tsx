@@ -2,14 +2,14 @@ import ItemCounter from "./shoppinng-cart/ItemCounter"
 
 interface ItemInCart{
     id:number,
-    productNma:string,
+    productName:string,
     productQuantity:number
 }
 
 const ItemsInCart:ItemInCart[] = [
-    {id: 1, productNma:"Nintendo switch 2", productQuantity: 10},
-    {id: 2, productNma:"Pro Controller", productQuantity: 8},
-    {id: 3, productNma:"Super Smash", productQuantity: 3},
+    {id: 1, productName:"Nintendo switch 2", productQuantity: 10},
+    {id: 2, productName:"Pro Controller", productQuantity: 8},
+    {id: 3, productName:"Super Smash", productQuantity: 3},
 ]
 
 export const FirstStepsApp = () => { //Esto es un componente y se debe escribir capitalizado
@@ -19,7 +19,7 @@ export const FirstStepsApp = () => { //Esto es un componente y se debe escribir 
             <h1>Shopping Cart</h1>
             {
                 ItemsInCart.map( (item) => (
-                    <ItemCounter key={item.id} name={item.productNma} quantity={ item.productQuantity }/>
+                    <ItemCounter key={item.id} name={item.productName} quantity={ item.productQuantity }/>
                 )) // al pasar listas al componente siempre toca agregar un key el cual NUNCA debe ser eel index del elemento
             }
 
